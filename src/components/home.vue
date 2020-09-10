@@ -1,7 +1,18 @@
 <template>
     <div>
-        <section class="frame">
-            <h1>Max Sultan</h1>
+        <section class="frame split">
+            <div class="left">
+            <div class="profile"></div>
+                <article class="white">
+                    <h1>Max Sultan</h1>
+                    <p>I am a georgia native. I went to school for entreprenuership</p>
+                </article>
+            </div>
+            <div class="col">
+            <button>Contact Me</button>
+            <button>View Projects</button>
+            <button>View My Stack</button>
+            </div>
         </section>
         <section class='frame'>
             <h1>Projects</h1>
@@ -63,5 +74,33 @@ export default {
     margin: 2em;
     padding: 2em;
     border-radius: 10px;
+}
+.profile{
+    background: url(../assets/spritesheet.png) no-repeat;
+    height: 500px;
+    width: 500px;
+    background-position: left top;
+    background-size: 1200px 500px;
+    border-radius: 30px;
+}
+.split{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    padding: 2em;
+    border-bottom: 1em solid #7FC29E;
+    background-color: #c4c4c4;
+}
+.white{
+    background-color: #ffffff;
+    margin: 1em;
 }
 </style>

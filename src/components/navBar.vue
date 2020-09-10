@@ -5,10 +5,10 @@
             <h1>MaxSULTAN</h1>
         </div>
         <ul class='right'>
-            <li><a href=""><img src=""/>Stack Overflow</a></li>
-            <li><a href=""><img src=""/>LinkedIn</a></li>
-            <li><a href=""><img src=""/>Github</a></li>
-            <li><a href=""><img src=""/>CodePen</a></li>
+            <li class="stack"><a href="" ></a></li>
+            <li><a href="" class="linked"><img src=""/>LinkedIn</a></li>
+            <li><a href="" class="hub"><img src=""/>Github</a></li>
+            <li><a href="" class="pen"><img src=""/>CodePen</a></li>
         </ul>
     </div>    
 </template>
@@ -28,5 +28,11 @@
     }
     li{
         margin: 2rem;
+    }
+    .stack{
+        background: url(../assets/spritesheet.png) no-repeat;
+        height: 48px;
+        width: 48px;
+        background-position: 3000px 2000px;
     }
 </style>
